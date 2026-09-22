@@ -31,8 +31,8 @@ export function Footer() {
               </span>
             </div>
             <p className="mt-3 text-sm text-ink-950/50">
-              O sistema de gestão que organiza turmas, mensalidades e
-              comunicação da sua escolinha de futebol.
+              A gestão que cabe no intervalo: turmas, mensalidades e presença,
+              para qualquer modalidade de aula.
             </p>
           </div>
 
@@ -61,7 +61,7 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col gap-2 border-t border-black/5 pt-6 text-xs text-ink-950/40 sm:flex-row sm:items-center sm:justify-between">
           <p>&copy; {new Date().getFullYear()} Athletto. Todos os direitos reservados.</p>
-          <p>Feito para quem forma atletas dentro e fora de campo.</p>
+          <p>Feito para quem dá aula.</p>
         </div>
       </div>
     </footer>

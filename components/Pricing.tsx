@@ -2,48 +2,58 @@ import { Check } from "lucide-react";
 
 const PLANS = [
   {
-    name: "Iniciante",
-    price: "R$ 89",
+    name: "Grátis",
+    price: "R$ 0",
     period: "/mês",
-    description: "Para escolinhas com até 60 alunos.",
+    costLine: "Taxa por pagamento recebido · R$ 0,30 por cobrança enviada",
+    description: "Para organizar tudo sem mensalidade.",
+    includesNote: null,
     features: [
-      "Até 60 alunos cadastrados",
-      "Gestão de turmas e horários",
-      "Cobrança de mensalidades via Pix",
-      "Chamada digital",
+      "Até 50 alunos",
+      "Turmas ilimitadas",
+      "Pagamento por Pix ou cartão, com taxa por transação",
+      "Cobrança por WhatsApp ou e-mail, paga por mensagem enviada",
+      "Painel com o resumo do mês",
+      "Suporte por ticket",
     ],
     highlighted: false,
-    cta: "Começar teste grátis",
+    cta: "Criar conta grátis",
   },
   {
-    name: "Profissional",
-    price: "R$ 179",
+    name: "Básico",
+    price: "R$ 69,90",
     period: "/mês",
-    description: "Para escolinhas em crescimento.",
+    costLine: "Taxa por transação menor · custo por mensagem a definir",
+    description: "Para quem cobra todo mês.",
+    includesNote: "Tudo do Grátis, e mais:",
     features: [
-      "Até 250 alunos cadastrados",
-      "Tudo do plano Iniciante",
-      "App de comunicação para os pais",
-      "Relatórios financeiros e de evasão",
-      "Suporte prioritário via WhatsApp",
+      "Até 200 alunos",
+      "Mais de uma pessoa na gestão da conta",
+      "Painel completo do mês",
+      "Acompanhamento individual de cada aluno",
+      "Suporte por ticket ou e-mail",
     ],
     highlighted: true,
-    cta: "Começar teste grátis",
+    cta: "Criar conta grátis",
   },
   {
-    name: "Rede de escolinhas",
-    price: "Sob consulta",
-    period: "",
-    description: "Para redes com múltiplas unidades.",
+    name: "Premium",
+    price: "R$ 219,90",
+    period: "/mês",
+    costLine: "A menor taxa por transação · custo por mensagem a definir",
+    description: "Para quem tem equipe e mais de uma unidade.",
+    includesNote: "Tudo do Básico, e mais:",
     features: [
-      "Alunos ilimitados",
-      "Tudo do plano Profissional",
-      "Gestão multi-unidade",
-      "Onboarding e migração assistidos",
+      "Até 500 alunos",
+      "Várias unidades",
+      "A marca da sua escola nas mensagens",
+      "Relatórios para exportar",
       "Gerente de conta dedicado",
+      "Suporte por WhatsApp, ticket ou e-mail",
+      "Acesso antecipado a novidades",
     ],
     highlighted: false,
-    cta: "Falar com vendas",
+    cta: "Falar com a gente",
   },
 ];
 
@@ -56,11 +66,11 @@ export function Pricing() {
             Planos
           </span>
           <h2 className="mt-3 text-3xl font-black tracking-tight text-white sm:text-4xl">
-            Um plano para cada tamanho de escolinha
+            Comece de graça. Cresça no seu tempo.
           </h2>
           <p className="mt-4 text-lg text-white/60">
-            14 dias grátis em qualquer plano, sem cartão de crédito. Cancele
-            quando quiser.
+            O plano Grátis não tem prazo pra acabar. Sem cartão, sem
+            fidelidade — você muda ou cancela quando quiser.
           </p>
         </div>
 
@@ -111,7 +121,27 @@ export function Pricing() {
                 </span>
               </div>
 
-              <ul className="mt-7 flex-1 space-y-3">
+              <p
+                className={`mt-2 text-xs font-medium ${
+                  plan.highlighted ? "text-ink-950/50" : "text-white/40"
+                }`}
+              >
+                {plan.costLine}
+              </p>
+
+              {plan.includesNote && (
+                <p
+                  className={`mt-6 text-xs font-bold uppercase tracking-wide ${
+                    plan.highlighted ? "text-brand-600" : "text-brand-400"
+                  }`}
+                >
+                  {plan.includesNote}
+                </p>
+              )}
+
+              <ul
+                className={`flex-1 space-y-3 ${plan.includesNote ? "mt-3" : "mt-7"}`}
+              >
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-2.5">
                     <Check
@@ -144,6 +174,10 @@ export function Pricing() {
             </div>
           ))}
         </div>
+
+        <p className="mt-8 text-center text-sm text-white/50">
+          Sem fidelidade. Você muda ou cancela quando quiser.
+        </p>
       </div>
     </section>
   );

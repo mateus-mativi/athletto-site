@@ -43,13 +43,13 @@ export function Header() {
             href="#contato"
             className="whitespace-nowrap text-sm font-semibold text-ink-950/70 transition-colors hover:text-ink-950"
           >
-            Falar com vendas
+            Falar com a gente
           </a>
           <a
             href="#planos"
             className="whitespace-nowrap rounded-full bg-brand-500 px-5 py-2.5 text-sm font-semibold text-white shadow-sm shadow-brand-500/30 transition-colors hover:bg-brand-600"
           >
-            Teste grátis
+            Criar conta grátis
           </a>
         </div>
 
@@ -82,7 +82,7 @@ export function Header() {
               onClick={() => setOpen(false)}
               className="mt-2 rounded-full bg-brand-500 px-5 py-3 text-center text-base font-semibold text-white"
             >
-              Teste grátis
+              Criar conta grátis
             </a>
           </nav>
         </div>

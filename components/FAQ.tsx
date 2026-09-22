@@ -5,29 +5,38 @@ import { ChevronDown } from "lucide-react";
 
 const QUESTIONS = [
   {
-    question: "Preciso instalar algum programa?",
+    question: "É grátis mesmo? O que eu pago?",
     answer:
-      "Não. O Athletto funciona direto no navegador, no computador ou no celular. Não é preciso instalar nada.",
+      "Sim. O plano Grátis organiza turmas, alunos e chamada sem mensalidade. Você só paga se usar a cobrança automática por WhatsApp, por envio.",
   },
   {
-    question: "Como funciona a cobrança das mensalidades?",
+    question: "Quanto custa cada cobrança por WhatsApp?",
     answer:
-      "Você configura os valores por turma ou por aluno e o Athletto gera as cobranças via Pix e boleto automaticamente, com lembretes para os responsáveis.",
+      "R$ 0,30 por cobrança enviada no plano Grátis. No plano Básico, o valor por envio é menor.",
   },
   {
-    question: "Dá para migrar os dados de outra planilha ou sistema?",
+    question: "Meus alunos vão receber mensagem de quem?",
     answer:
-      "Sim. Nosso time ajuda a importar alunos, responsáveis e histórico de pagamentos durante o onboarding, sem custo adicional.",
+      "Da sua escola, com o nome dela na mensagem. O Athletto só entrega o aviso e o link de pagamento.",
   },
   {
-    question: "Existe fidelidade ou multa de cancelamento?",
+    question: "Serve para pilates, luta, natação?",
     answer:
-      "Não. Os planos são mensais e você pode cancelar quando quiser, direto no painel.",
+      "Serve. Você cria os horários como turmas e organiza alunos de qualquer modalidade, não só futebol.",
   },
   {
-    question: "O aplicativo para os pais é cobrado à parte?",
+    question: "Tenho meus alunos numa planilha. Dá para trazer?",
     answer:
-      "Não, o acesso dos responsáveis está incluso nos planos Profissional e Rede de escolinhas, sem custo por família.",
+      "Dá. Você importa a planilha inteira de uma vez, e nosso time ajuda se precisar.",
+  },
+  {
+    question: "Os dados dos meus alunos ficam seguros? Quem tem acesso?",
+    answer:
+      "Ficam. Só você e os professores da sua escola têm acesso aos dados dos seus alunos.",
+  },
+  {
+    question: "Posso cancelar quando quiser?",
+    answer: "Pode, direto no painel, sem fidelidade e sem multa.",
   },
 ];
 

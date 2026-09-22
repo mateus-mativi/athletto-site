@@ -1,19 +1,19 @@
 const TESTIMONIALS = [
   {
     quote:
-      "Parei de correr atrás de mensalidade atrasada no grupo de WhatsApp. A inadimplência caiu quase pela metade no primeiro trimestre.",
+      "Parei de correr atrás de mensalidade atrasada no grupo de WhatsApp. Hoje sei quem pagou sem precisar perguntar.",
     name: "Fernando Ribeiro",
     role: "Diretor, Escolinha Craques do Amanhã",
   },
   {
     quote:
-      "A chamada pelo celular em campo mudou nossa rotina. Hoje sei exatamente quem faltou e consigo avisar os pais na hora.",
+      "A chamada pelo celular mudou nossa rotina. Sei exatamente quem faltou e já aviso os pais no grupo certo.",
     name: "Carla Menezes",
     role: "Coordenadora, Instituto Bola nos Pés",
   },
   {
     quote:
-      "Migramos de três planilhas diferentes para o Athletto em uma tarde. O suporte ajudou a importar tudo sem perder histórico.",
+      "Migramos de três planilhas para o Athletto numa tarde só. O suporte ajudou a importar tudo, sem perder histórico.",
     name: "João Pedro Alves",
     role: "Fundador, Escolinha Gol de Placa",
   },
@@ -28,7 +28,7 @@ export function Testimonials() {
             Depoimentos
           </span>
           <h2 className="mt-3 text-3xl font-black tracking-tight text-ink-950 sm:text-4xl">
-            Quem gerencia escolinhas confia no Athletto
+            Professores que já usam o Athletto
           </h2>
         </div>
 

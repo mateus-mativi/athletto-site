@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Athletto — Gestão completa para escolinhas de futebol",
+  title: "Athletto — A gestão que cabe no intervalo",
   description:
-    "Turmas, mensalidades, presença e comunicação com os pais em um só lugar. O Athletto é o SaaS que organiza a rotina da sua escolinha de futebol.",
+    "Turmas, presença e mensalidade no celular, entre uma turma e outra. O Athletto começa grátis — você paga quando cobra.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

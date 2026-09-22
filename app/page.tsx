@@ -1,9 +1,10 @@
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { Features } from "@/components/Features";
+import { Interval } from "@/components/Interval";
+import { ProductInAction } from "@/components/ProductInAction";
 import { HowItWorks } from "@/components/HowItWorks";
-import { MoreFeatures } from "@/components/MoreFeatures";
 import { Team, TEAM_MEMBERS } from "@/components/Team";
+import { Features } from "@/components/Features";
 import { Testimonials } from "@/components/Testimonials";
 import { Pricing } from "@/components/Pricing";
 import { FAQ } from "@/components/FAQ";
@@ -16,10 +17,11 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <Features />
+        <Interval />
+        <ProductInAction />
         <HowItWorks />
-        <MoreFeatures />
         <Team members={TEAM_MEMBERS} />
+        <Features />
         <Testimonials />
         <Pricing />
         <FAQ />

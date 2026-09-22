@@ -3,6 +3,13 @@
 :root {
   --background: #ffffff;
   --foreground: #0b1120;
+  --card: #ffffff;
+  --card-foreground: #06120c;
+  --secondary: #eefdf3;
+  --secondary-foreground: #0a7642;
+  --muted: #f1f5f3;
+  --muted-foreground: #5b6b62;
+  --ring: #17b862;
 }
 
 @theme inline {
@@ -24,6 +31,14 @@
   --color-brand-950: #032b1a;
 
   --color-ink-950: #06120c;
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-ring: var(--ring);
 }
 
 body {

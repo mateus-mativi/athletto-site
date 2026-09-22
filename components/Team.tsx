@@ -11,49 +11,49 @@ export const TEAM_MEMBERS: TeamMember[] = [
     name: "Rafael Costa",
     role: "Técnico de Futebol",
     photo:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&h=800&q=80",
+      "https://images.unsplash.com/photo-1570498839593-e565b39455fc?auto=format&fit=crop&w=600&h=800&q=80",
   },
   {
     name: "Marina Duarte",
     role: "Professora de Pilates",
     photo:
-      "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=600&h=800&q=80",
+      "https://images.unsplash.com/photo-1591258370814-01609b341790?auto=format&fit=crop&w=600&h=800&q=80",
   },
   {
     name: "Diego Almeida",
     role: "Treinador de Basquete",
     photo:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=600&h=800&q=80",
+      "https://images.unsplash.com/photo-1608245449230-4ac19066d2d0?auto=format&fit=crop&w=600&h=800&q=80",
   },
   {
     name: "Beatriz Nogueira",
     role: "Instrutora de Natação",
     photo:
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&h=800&q=80",
+      "https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=600&h=800&q=80",
   },
   {
     name: "Thiago Martins",
     role: "Técnico de Vôlei",
     photo:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&h=800&q=80",
+      "https://images.unsplash.com/photo-1547347298-4074fc3086f0?auto=format&fit=crop&w=600&h=800&q=80",
   },
   {
     name: "Camila Rocha",
     role: "Personal Trainer",
     photo:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&h=800&q=80",
+      "https://images.unsplash.com/photo-1648542036561-e1d66a5ae2b1?auto=format&fit=crop&w=600&h=800&q=80",
   },
   {
     name: "Eduardo Lima",
-    role: "Professor de Judô",
+    role: "Professor de Muay Thai",
     photo:
-      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&h=800&q=80",
+      "https://images.unsplash.com/photo-1696454411278-a64de1369e83?auto=format&fit=crop&w=600&h=800&q=80",
   },
   {
     name: "Patrícia Souza",
     role: "Treinadora de Ginástica",
     photo:
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&h=800&q=80",
+      "https://images.unsplash.com/photo-1505619730259-b1288d154955?auto=format&fit=crop&w=600&h=800&q=80",
   },
 ];
 
@@ -81,7 +81,7 @@ function TeamCard({ member }: { member: TeamMember }) {
 export function Team({ members }: { members: TeamMember[] }) {
   return (
     <section
-      id="equipe"
+      id="modalidades"
       className="relative overflow-hidden bg-brand-50/60 py-20 sm:py-28"
     >
       <div className="mx-auto max-w-6xl px-6">
@@ -94,12 +94,11 @@ export function Team({ members }: { members: TeamMember[] }) {
             <Users size={26} />
           </span>
           <h2 className="mt-6 text-3xl font-black tracking-tight text-ink-950 sm:text-4xl">
-            Feito para todo tipo de equipe
+            Feito para quem dá aula, em qualquer modalidade
           </h2>
           <p className="mt-4 text-lg text-ink-950/60">
-            De técnicos de futebol a professores de pilates: o Athletto
-            organiza turmas, presença e mensalidades para qualquer
-            modalidade.
+            Do técnico de futebol à professora de pilates, a rotina muda — a
+            gestão que cabe no intervalo é a mesma.
           </p>
         </div>
       </div>

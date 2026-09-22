@@ -15,35 +15,35 @@ type Step = {
 const STEPS: Step[] = [
   {
     icon: UserPlus,
-    title: "Cadastre sua escolinha",
+    title: "Cadastre alunos e turmas",
     description:
-      "Importe alunos, responsáveis e turmas em minutos — ou comece do zero com nosso time te ajudando.",
+      "Crie a turma com nome e horário, e traga os alunos da planilha de uma vez, ou um por um.",
     benefits: [
-      "Importação de alunos e responsáveis em minutos",
-      "Time de suporte te ajuda na configuração",
-      "Sem planilhas soltas ou papelada",
+      "Turma pronta com nome e horário",
+      "Alunos importados da planilha, de uma vez",
+      "Sem planilha paralela para manter depois",
     ],
   },
   {
     icon: Settings2,
-    title: "Configure turmas e mensalidades",
+    title: "Defina a mensalidade",
     description:
-      "Defina categorias, horários e planos de cobrança. O Athletto cuida dos lembretes e das cobranças automáticas.",
+      "Defina o valor e o vencimento. O Athletto cobra no dia certo, sozinho.",
     benefits: [
-      "Categorias, horários e professores personalizáveis",
-      "Cobrança automática via Pix e boleto",
-      "Lembretes de vencimento enviados sozinhos",
+      "Valor e vencimento por aluno ou por turma",
+      "Cobrança automática por Pix, boleto ou WhatsApp",
+      "Lembrete enviado antes do vencimento",
     ],
   },
   {
     icon: Smartphone,
-    title: "Gerencie o dia a dia em campo",
+    title: "Use no dia a dia",
     description:
-      "Faça chamada, envie avisos e acompanhe pagamentos pelo celular, direto do campo ou de casa.",
+      "Chamada, avisos e pagamentos pelo celular, entre uma turma e outra.",
     benefits: [
-      "Chamada digital pelo celular, direto do campo",
-      "Avisos e comunicados para os responsáveis",
-      "Pagamentos acompanhados em tempo real",
+      "Chamada em um toque, direto do celular",
+      "Avisos para os responsáveis em poucos toques",
+      "Veja quem pagou assim que a cobrança cai",
     ],
   },
 ];
@@ -81,7 +81,7 @@ export function HowItWorks() {
             Como funciona
           </span>
           <h2 className="mt-3 text-3xl font-black tracking-tight text-ink-950 sm:text-4xl">
-            No ar em três passos
+            Comece em três passos rápidos
           </h2>
         </div>
 

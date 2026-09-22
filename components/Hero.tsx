@@ -1,9 +1,9 @@
 import { CalendarCheck2, MessageCircleMore, Wallet } from "lucide-react";
 
 const STATS = [
-  { value: "500+", label: "escolinhas ativas" },
-  { value: "60 mil+", label: "alunos gerenciados" },
-  { value: "98%", label: "de inadimplência a menos" },
+  { value: "R$ 0", label: "para organizar tudo" },
+  { value: "R$ 0,30", label: "por cobrança enviada" },
+  { value: "0", label: "de fidelidade ou multa" },
 ];
 
 export function Hero() {
@@ -28,19 +28,17 @@ export function Hero() {
       <div className="relative mx-auto grid max-w-6xl gap-14 px-6 pb-20 pt-16 md:grid-cols-2 md:items-center md:pb-28 md:pt-24">
         <div>
           <span className="inline-flex items-center gap-2 rounded-full border border-brand-400/30 bg-brand-500/10 px-4 py-1.5 text-xs font-semibold text-brand-300">
-            Feito para escolinhas de futebol
+            Feito para quem dá aula
           </span>
 
           <h1 className="mt-6 text-4xl font-black leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl">
-            A gestão da sua escolinha,{" "}
-            <span className="text-brand-400">fora de campo</span> e no
-            controle.
+            A gestão que cabe{" "}
+            <span className="text-brand-400">no intervalo</span>.
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/70">
-            Turmas, mensalidades, presença e comunicação com os pais em um só
-            lugar. O Athletto tira a bagunça das planilhas e do WhatsApp para
-            você focar no que importa: formar atletas.
+            Turmas, presença e mensalidade no celular, entre uma turma e
+            outra. O Athletto começa grátis — você paga quando cobra.
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -48,7 +46,7 @@ export function Hero() {
               href="#planos"
               className="rounded-full bg-brand-500 px-7 py-3.5 text-center text-sm font-semibold text-white shadow-lg shadow-brand-500/30 transition-colors hover:bg-brand-600"
             >
-              Começar teste grátis de 14 dias
+              Criar conta grátis
             </a>
             <a
               href="#como-funciona"
